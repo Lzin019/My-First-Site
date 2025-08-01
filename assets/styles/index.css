@@ -1,0 +1,14 @@
+/* reset do CSS */
+*{
+    margin: 45px;
+    padding: 0;
+}
+
+h1, p {
+text-align: center;
+}
+
+
+header {
+    background-color: rgba(185, 4, 4, 0.808);
+}
