@@ -1,5 +1,6 @@
 /* reset do CSS */
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +14,6 @@ body{
     font-family: MedievalSharp ,Arial, Helvetica, sans-serif;
 }
 
-
 header {
     background-color: rgb(161, 198, 214);
     color: rgb(0, 0, 0);
@@ -23,12 +23,14 @@ header {
 
 main{
     background-color: rgb(196, 225, 237);
-   flex: 1;
-   padding: 48px 38px;
-   width: 100%;
+    flex: 1;
+    padding: 48px 38px;
+    width: 100%;
 }
 
-about-section {
+about-section,
+hobbies,
+contact {
     display: block;
     background-color: rgb(255, 255, 255);
     width: 80%;
@@ -37,7 +39,6 @@ about-section {
     border-radius: 12px;
     margin-bottom: 30px;
 }
-
 
 #titulo-sobre-mim {
     font-size: 40px;
@@ -50,13 +51,6 @@ about-section {
 }
 
 hobbies {
-    display: block;
-    background-color: rgb(255, 255, 255);
-    width: 80%;
-    margin: 0 auto;
-    padding: 40px;
-    border-radius: 12px;
-    margin-bottom: 30px;
     font-weight: bold;
 }
 
@@ -65,6 +59,7 @@ ul {
     padding: 0;
     display: flex;
     gap: 12px;
+    flex-wrap: wrap; /* Para que os itens se ajustem quando necessário */
 }
 
 li {
@@ -73,7 +68,6 @@ li {
     border-left: 4px solid rgb(82, 189, 255);
     font-size: 16px;
     min-width: 250px;
-
 }
 
 li:hover {
@@ -88,17 +82,7 @@ li:hover {
     margin-bottom: 20px;
 }
 
-contact{
-        display: block;
-        background-color: rgb(255, 255, 255);
-        width: 80%;
-        margin: 0 auto;
-        padding: 40px;
-        border-radius: 12px;
-        margin-bottom: 30px;
-}
-
-contact h2{
+contact h2 {
     margin-bottom: 8px;
     font-size: 30px;
     text-align: center;
@@ -126,7 +110,6 @@ contact a:hover {
     background-color: rgb(69, 166, 236);
     color: rgb(123, 233, 248);
     transform: translateX(-2px);
-
 }
 
 footer {
@@ -139,4 +122,101 @@ footer {
 
 footer p {
     font-size: 2rem;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    main {
+        padding: 48px 30px;
+    }
+    
+    about-section, hobbies, contact {
+        width: 90%;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 40px;
+    }
+
+    about-section, hobbies, contact {
+        width: 90%;
+        padding: 25px;
+    }
+
+    ul {
+        flex-direction: column; /* Organiza os itens em coluna */
+    }
+
+    li {
+        min-width: 100%; /* Ocupa toda a largura disponível */
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 30px;
+    }
+
+    #titulo-sobre-mim, #titulo-hobbies {
+        font-size: 32px;
+    }
+
+    .texto-sobre-mim {
+        font-size: 20px;
+    }
+
+    contact h2 {
+        font-size: 26px;
+    }
+
+    contact p {
+        font-size: 18px;
+    }
+
+    contact a {
+        padding: 0.3rem 0.8rem;
+        font-size: 18px;
+    }
+
+    footer p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px;
+    }
+
+    #titulo-sobre-mim, #titulo-hobbies {
+        font-size: 28px;
+    }
+
+    .texto-sobre-mim {
+        font-size: 18px;
+    }
+
+    contact h2 {
+        font-size: 22px;
+    }
+
+    contact p {
+        font-size: 16px;
+    }
+
+    contact a {
+        padding: 0.3rem 0.7rem;
+        font-size: 16px;
+    }
+
+    footer p {
+        font-size: 1.2rem;
+    }
 }
