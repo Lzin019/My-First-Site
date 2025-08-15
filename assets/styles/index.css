@@ -128,3 +128,15 @@ contact a:hover {
     transform: translateX(-2px);
 
 }
+
+footer {
+    background-color: aliceblue;
+    color: aliceblue;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+}
+
+footer p {
+    font-size: 2rem;
+}
