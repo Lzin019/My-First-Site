@@ -1,5 +1,5 @@
 /* reset do CSS */
-@import url('https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Bungee&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: Bitcount;
+    font-family: MedievalSharp ,Arial, Helvetica, sans-serif;
 }
 
 
@@ -41,7 +41,7 @@ about-section {
 
 #titulo-sobre-mim {
     font-size: 40px;
-    border-bottom: 2px solid rgb(82, 189, 255);
+    border-bottom: 2px solid rgb(254, 255, 255);
 }
 
 .texto-sobre-mim {
@@ -57,6 +57,7 @@ hobbies {
     padding: 40px;
     border-radius: 12px;
     margin-bottom: 30px;
+    font-weight: bold;
 }
 
 ul {
@@ -85,4 +86,45 @@ li:hover {
     font-size: 40px;
     border-bottom: 2px solid rgb(82, 189, 255);
     margin-bottom: 20px;
+}
+
+contact{
+        display: block;
+        background-color: rgb(255, 255, 255);
+        width: 80%;
+        margin: 0 auto;
+        padding: 40px;
+        border-radius: 12px;
+        margin-bottom: 30px;
+}
+
+contact h2{
+    margin-bottom: 8px;
+    font-size: 30px;
+    text-align: center;
+}
+
+contact p {
+    margin-bottom: 8px;
+    font-size: 22px;
+    text-align: center;
+}
+
+contact a {
+    color: rgb(71, 147, 214);
+    text-decoration: none;
+    font-weight: bold;
+    padding:0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: 2px solid rgb(77, 152, 196);
+    border-radius: 25px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+contact a:hover {
+    background-color: rgb(69, 166, 236);
+    color: rgb(123, 233, 248);
+    transform: translateX(-2px);
+
 }
